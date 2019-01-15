@@ -1,16 +1,22 @@
 # zetwerk_task
 
-EMP CRUD
-1)	Fetch code from github and run “npm install”
-2)	https://github.com/anuj0361/zetwerk_task
+How to run on local system
+1)	Fetch code from github https://github.com/anuj0361/zetwerk_task
+2)	Run "npm install" from root directory to install all the server-side dependencies. Goto client directory and do the same to install client-side dependencies.
+3) For running application run "npm run dev" from your project root and it will start client & server concurrently.
+4) Application will be accessible at "http://localhost:3000" from your browser.
+5) If you want to check only backend APIs, open postman and access below APIs on localhost:5000
 
 BackEnd(NodeJS)
 
 Backend contains four APIs. All are working fine with proper validation.
-1)	POST(/api/employee) : Add a new employee. Body contains  name,salary,dob, skills as json parameters. Values are added in MLab DB with an autoincrementID
+1)	POST(/api/employee) : Add a new employee. Body contains  name,salary,dob, skills as json parameters. Values are added in MLab DB with an autoincrementID.
 2)	GET(/api/employee): Fetches list of all the employees in the database.
-3)	DELETE(/api/employee/:id): Deletes a particular employee from the database. Takes “id” as input parameter
-4)	POST(/api/employee/update/:id): Updates the value of employee in the DB
+3)	DELETE(/api/employee/:id): Deletes a particular employee from the database. Takes “id” as input parameter.
+4)	POST(/api/employee/update/:id): Updates the value of employee in the DB.
+
+
+
 FrontEnd(ReactJS)
 1)	Dashboard contains list of all employees and add employee button.
 2)	User can add employee on clicking on add icon.
